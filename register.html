@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- Viewport Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Register
+    </title>
+
+    <link rel="stylesheet" href="CSS-Rest.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="normal">
+
+    <header>
+        <img src="logo.jpg" alt="Agency's Logo" class="logo">
+        <p class="logo-name1">Travel </p>
+        <p class="logo-name2">Experts</p>
+    </header>
+
+    <nav>
+        About My Acount Flights Hotels Tours Home
+    </nav>
+
+    <h1>Please complete the form carefully.</h1>
+    <div class="form">
+        <form action="bouncer.php">
+
+            <span class="symbol">*</span>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="FirstName" required>
+
+            Middle Name:<input type="text" name="middle-name">
+
+            <span class="symbol">*</span>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="LastName" required>
+            <br><br>
+
+            Phone number:<input type="text" name="phone">
+
+            <span class="symbol">*</span>
+            <label for="Email-Address">Email asddress:</label>
+            <input type="text" id="Email-Address" name="emaile" required>
+
+            Marital Status:<input type="radio" name="marital-status" value="married" checked> Married
+            <input type="radio" name="marital-status" value="single"> Single
+            <br><br>
+
+            <label for="address">Address:</label>
+            <textarea name="address" id="address">Type here.</textarea>
+
+            Postal Code:<input type="text" name="postal-code">
+
+            City:
+            <select size="1" name="city">
+                <option selected disabled hidden></option>
+                <option value="Calgary">Calgary</option>
+                <option value="Edmonton">Edmonton</option>
+            </select>
+
+            Province:
+            <select size="1">
+                <option selected disabled hidden></option>
+                <option value="Alberta">AL</option>
+                <option value="British Columbia">BC</option>
+            </select>
+
+            Country:
+            <select size="1" name="country">
+                <option selected disabled></option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select>
+            <br><br>
+
+            Previousely visited countries:
+            <input type="checkbox" name="visited-countries" value="India">India
+            <input type="checkbox" name="visited-countries" value="Turkey">Turkey
+            <input type="checkbox" name="visited-countries" value="Iran">Iran
+            <input type="checkbox" name="visited-countries" value="UAE">UAE
+            <br><br>
+
+            <input type="submit" value="Click to Submit">
+        </form>
+    </div>
+    <!--***********************************************************************************************************-->
+    <footer>
+
+        <div class="footer-header">QUICK LINKS</div>
+
+        <br>Cheap Flights<br>
+        Last Minute Vacations<br>
+        All Inclusive Vacation Packages<br>
+        Caribbean Vacations<br>
+        Cruise Deals<br>
+
+        <p class="footer-note">Travel Experts Ltd.<br>
+            copyright &copy; 2019
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
