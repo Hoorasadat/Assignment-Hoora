@@ -1,38 +1,5 @@
-// var FormPage = document.getElementById('FormBody');
-// var MainPage = document.getElementById('main');
 
-// if (FormPage.id === FormBody) {
-//     //Scripts for Register web page:
-
-
-// //Adding confirmation before submitting
-// var submitButton = document.getElementById("SubmitButton");
-
-// submitButton.addEventListener("click", function (event) {
-//     event.preventDefault();
-//     var submitConfirm = confirm("Do you confirm your information?");
-//     if (submitConfirm) {
-//         console.log(submitConfirm);
-//     } else {
-//         console.log(submitConfirm);
-//     }
-// });
-
-// //Adding confirmation before resetting
-// var resetButton = document.getElementById("ResetButton");
-
-// resetButton.addEventListener("click", function (event) {
-//     event.preventDefault();
-//     var resetConfirm = confirm("Are you sure?");
-//     if (resetConfirm) {
-//         console.log(resetConfirm);
-//     } else {
-//         console.log(resetConfirm);
-//     }
-// });
-
-// } else if (FormPage.id === main) {
-
+if (document.getElementById('main')) {
 
 var immageArray = ["Country5.jpg", "Country6.jpg", "Country7.jpg", "Country8.jpg"];
 var descriptionArray = ["Thiland", "Malaysia", "USA", "German"];
@@ -83,7 +50,6 @@ for (i = 0; i < immageArray.length; i++) {
 
     newTable.appendChild(newTableRow);
 
-    
 };
 
 console.log(newTable);
@@ -93,5 +59,39 @@ var MainContent = document.getElementsByClassName("mainContent")[0];
 MainContent.appendChild(newTable);
 
 
-// };
+};
 
+
+if (document.getElementById('FormBody')) {
+    //Scripts for Register web page:
+    
+    //Adding confirmation before submitting
+    var submitButton = document.getElementById("SubmitButton");
+    
+    submitButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        var submitConfirm = confirm("Do you confirm your information?");
+        if (submitConfirm) {
+            console.log(submitConfirm);
+        } else {
+            console.log(submitConfirm);
+        }
+    });
+    
+    
+    //Adding confirmation before resetting
+    var resetButton = document.getElementById("ResetButton");
+    
+    resetButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        var resetConfirm = confirm("Are you sure?");
+        if (resetConfirm) {
+            console.log(resetConfirm);
+        } else {
+            console.log(resetConfirm);
+        }
+    });
+    
+    
+    };
+    
