@@ -213,6 +213,7 @@ if (document.getElementById('FormBody')) {
 
 //Scripts for the Contact web page:
 if (document.getElementById('contactBody')) {
+    
     //Animation:
     var planeTimer = setInterval(planeFly, 5);
 
