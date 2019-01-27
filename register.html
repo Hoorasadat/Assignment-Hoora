@@ -21,7 +21,7 @@
 
 </head>
 
-<body class="normal" id="FormBody">
+<body class="others" id="FormBody">
 
     <header>
         <img src="logo.jpg" alt="Agency's Logo" class="logo">
@@ -35,24 +35,33 @@
 
     <h1>Please complete the form carefully.</h1>
     <div class="form">
-        <form action="" method="POST">
+        <form action="" method="POST" name='form'>
 
-            <span class="symbol">*</span>
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="FirstName" required>
+            <div class="form-description">
 
-            Middle Name:<input type="text" name="middle-name">
+                <span class="symbol">*</span>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="FirstName" required>
+                <p id="descFsName" style="display:none;">It should be your legal first name.</p>
+                <br><br>
 
-            <span class="symbol">*</span>
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="LastName" required>
-            <br><br>
+                Middle Name:<input type="text" name="middle-name" id="middle-name">
+                <p id="descMdName" style="display:none;">You can just miss this part.</p>
+                <br><br>
 
+                <span class="symbol">*</span>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="LastName" required>
+                <p id="descLsName" style="display:none;">It should be your legal last name.</p>
+                <br><br>
+
+            </div>
+            <br><br><br><br><br><br><br><br>
             Phone number:<input type="text" name="phone">
 
             <span class="symbol">*</span>
             <label for="Email-Address">Email asddress:</label>
-            <input type="text" id="Email-Address" name="emaile" required>
+            <input type="text" id="Email-Address" name="email" required>
 
             Marital Status:<input type="radio" name="marital-status" value="married" checked> Married
             <input type="radio" name="marital-status" value="single"> Single
@@ -61,7 +70,7 @@
             <label for="address">Address:</label>
             <textarea name="address" id="address">Type here.</textarea>
 
-            Postal Code:<input type="text" name="postal-code">
+            Postal Code:<input type="text" name="postalCode">
 
             City:
             <select size="1" name="city">
@@ -94,8 +103,14 @@
             <br><br>
 
             <input type="submit" id="SubmitButton" value="Click to Submit">
-            
+
             <input type="reset" id="ResetButton" value="Click to Reset">
+
+            <!-- Error message: -->
+        <p id="errorFsName" style="display:none;">*Please fill the First name field.</p>
+        <p id="errorLsName" style="display:none;">*Please fill the Last name field.</p>
+        <p id="errorEmail" style="display:none;">*Please add your email address.</p>        
+        <p id="errorPostCod" style="display:none;">*The format of postal code should be "A1A2B2".</p>
 
         </form>
     </div>
