@@ -4,9 +4,10 @@
 
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <!-- Viewport Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>
         Register
@@ -20,9 +21,10 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<!--***********************************************************************************************************-->
 
 <body class="others" id="FormBody">
-
+    <!--***********************************************************************************************************-->
     <header>
         <img src="logo.jpg" alt="Agency's Logo" class="logo">
         <p class="logo-name1">Travel </p>
@@ -35,7 +37,7 @@
 
     <h1>Please complete the form carefully.</h1>
     <div class="form">
-        <form action="" method="POST" name='form'>
+        <form action="bouncer.php" method="POST" name='form'>
 
             <div class="form-description">
 
@@ -63,14 +65,23 @@
             <label for="Email-Address">Email asddress:</label>
             <input type="text" id="Email-Address" name="email" required>
 
-            Marital Status:<input type="radio" name="marital-status" value="married" checked> Married
+            Marital Status:
+            <input type="radio" name="marital-status" value="married" checked> Married
             <input type="radio" name="marital-status" value="single"> Single
             <br><br>
 
-            <label for="address">Address:</label>
-            <textarea name="address" id="address">Type here.</textarea>
+            <div class="form-description">
 
-            Postal Code:<input type="text" name="postalCode">
+                <label for="address">Address:</label>
+                <textarea name="address" id="address">Type here.</textarea>
+                <p id="descAddress" style="display:none;">You may type the appartment no. and street name here.</p>
+                <br><br>
+
+                Postal Code:<input type="text" name="postalCode">
+                <p id="descPostalCode" style="display:none;">The format of postal code should be "A1A2B2".</p>
+
+            </div>
+            <br><br><br><br><br><br><br>
 
             City:
             <select size="1" name="city">
@@ -80,7 +91,7 @@
             </select>
 
             Province:
-            <select size="1">
+            <select size="1" name="province">
                 <option selected disabled hidden></option>
                 <option value="Alberta">AL</option>
                 <option value="British Columbia">BC</option>
@@ -107,10 +118,10 @@
             <input type="reset" id="ResetButton" value="Click to Reset">
 
             <!-- Error message: -->
-        <p id="errorFsName" style="display:none;">*Please fill the First name field.</p>
-        <p id="errorLsName" style="display:none;">*Please fill the Last name field.</p>
-        <p id="errorEmail" style="display:none;">*Please add your email address.</p>        
-        <p id="errorPostCod" style="display:none;">*The format of postal code should be "A1A2B2".</p>
+            <p id="errorFsName" style="display:none;">*Please fill the First name field.</p>
+            <p id="errorLsName" style="display:none;">*Please fill the Last name field.</p>
+            <p id="errorEmail" style="display:none;">*Please add your email address.</p>
+            <p id="errorPostCod" style="display:none;">*Please correct the format of your postal code.</p>
 
         </form>
     </div>
